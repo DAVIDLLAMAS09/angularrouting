@@ -18,7 +18,7 @@ var app = angular.module('routingDemo', ['ngRoute']);
                 // write authentication code here.. 
 
                 $location.path('/student/' + username)
-            };
+            };      
 
         });
 
