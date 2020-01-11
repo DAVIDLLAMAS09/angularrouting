@@ -5,6 +5,7 @@
         <div class="col-sm-6">
             <input type="text" id="userName" name="userName" placeholder="User Name" class="form-control" ng-model="userName" required />
             <span class="help-block" ng-show="loginForm.userName.$touched && loginForm.userName.$invalid">Please enter User Name.</span>
+            <span ng-show="loginForm.userName.$touched && loginForm.userName.$valid">correct</span>
         </div>
         <div class="col-sm-3">
         </div>
@@ -23,3 +24,4 @@
     
     <input type="submit" value="Login" class="btn btn-primary col-sm-offset-3" ng-click="authenticate(userName)" />
 </form>
+

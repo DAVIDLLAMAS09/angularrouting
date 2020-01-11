@@ -21,7 +21,8 @@ var app = angular.module('routingDemo', ['ngRoute']);
         $scope.authenticate = function (username) {
             // write authentication code here.. 
 
-            $location.path('/student/' + username)
+            $scope.data = username;
+            console.log($scope.data)
         };
 
     }).controller("studentcontroller", function ($scope) {
